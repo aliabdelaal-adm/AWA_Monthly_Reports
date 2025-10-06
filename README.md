@@ -73,17 +73,24 @@ The Intelligent Monthly Reports System is a comprehensive and innovative solutio
 
 #### Windows (ويندوز)
 ```bash
-# 1. Download and extract the project
-# 2. Open Command Prompt in the project folder
-# 3. Run:
+# 1. Download the project from GitHub:
+#    Go to: https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
+#    Click green "Code" button → "Download ZIP"
+#    Extract AWA_Monthly_Reports-main.zip
+# 2. Open the extracted AWA_Monthly_Reports-main folder
+# 3. Double-click install.bat (or run in Command Prompt):
 install.bat
 ```
 
 #### macOS/Linux (ماك/لينكس)
 ```bash
-# 1. Download and extract the project
-# 2. Open Terminal in the project folder
+# 1. Download the project from GitHub:
+#    Go to: https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
+#    Click green "Code" button → "Download ZIP"
+#    Extract AWA_Monthly_Reports-main.zip
+# 2. Open Terminal in the extracted AWA_Monthly_Reports-main folder
 # 3. Run:
+chmod +x install.sh
 ./install.sh
 ```
 
