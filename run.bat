@@ -58,7 +58,11 @@ echo.
 echo The application will be available at:
 echo http://localhost:5000
 echo.
+echo Opening browser automatically in 3 seconds...
 echo Press Ctrl+C to stop the application
 echo.
+
+REM Open browser in background after a short delay
+start /b cmd /c "timeout /t 3 /nobreak >nul && start http://localhost:5000"
 
 python main.py

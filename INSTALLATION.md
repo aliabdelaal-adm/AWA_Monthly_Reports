@@ -169,8 +169,8 @@ The scripts automatically:
 
 ### بعد اكتمال التثبيت / After Installation Completes
 
-1. افتح المتصفح / Open your browser
-2. انتقل إلى / Navigate to: **http://localhost:5000**
+1. المتصفح سيفتح تلقائياً / Browser will open automatically
+2. سينقلك إلى / It will navigate to: **http://localhost:5000**
 3. ابدأ استخدام التطبيق! / Start using the application!
 
 ---
@@ -464,9 +464,9 @@ chmod +x start-android.sh
 - ✅ إعداد المجلدات / Set up directories
 - ✅ تشغيل التطبيق / Start the application
 
-🎉 انتهى! افتح المتصفح على `http://localhost:5000`
+🎉 انتهى! المتصفح سيفتح تلقائياً على `http://localhost:5000`
 
-🎉 Done! Open browser to `http://localhost:5000`
+🎉 Done! Browser will open automatically at `http://localhost:5000`
 
 > 💡 **للتشغيل مرة أخرى**: فقط شغّل `./start-android.sh` مرة أخرى!  
 > 💡 **To run again**: Just run `./start-android.sh` again!

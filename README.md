@@ -122,7 +122,7 @@ cd AWA_Monthly_Reports
 chmod +x start-android.sh
 ./start-android.sh
 
-# 5. Open browser to: http://localhost:5000
+# 5. Browser will open automatically to: http://localhost:5000
 ```
 
 > 📖 **دليل أندرويد المبسط (بالعربي) / Simplified Android Guide (in Arabic):**  
@@ -137,6 +137,7 @@ chmod +x start-android.sh
 - ✅ تثبيت جميع المكتبات
 - ✅ إعداد المجلدات المطلوبة
 - ✅ تشغيل التطبيق
+- ✅ فتح المتصفح تلقائياً
 
 **That's it! The script will automatically:**
 - ✅ Check system requirements
@@ -144,6 +145,7 @@ chmod +x start-android.sh
 - ✅ Install all dependencies
 - ✅ Set up required directories
 - ✅ Start the application
+- ✅ Open browser automatically
 
 > 🚨 **واجهت مشاكل في التثبيت؟ / Having installation issues?**  
 > راجع دليل حل المشاكل / Check the troubleshooting guide: [TROUBLESHOOTING_AR.md](TROUBLESHOOTING_AR.md)

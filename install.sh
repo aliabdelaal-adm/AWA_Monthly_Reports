@@ -68,17 +68,7 @@ echo ""
 # Create virtual environment
 echo "[3/6] Creating virtual environment..."
 if [ -d "venv" ]; then
-    echo "Virtual environment already exists."
-    echo "Do you want to recreate it? (y/n)"
-    read -r response
-    if [ "$response" = "y" ] || [ "$response" = "Y" ]; then
-        echo "Removing existing virtual environment..."
-        rm -rf venv
-        python3 -m venv venv
-        echo "✓ Virtual environment recreated"
-    else
-        echo "✓ Using existing virtual environment"
-    fi
+    echo "✓ Using existing virtual environment"
 else
     python3 -m venv venv
     echo "✓ Virtual environment created"
@@ -128,12 +118,6 @@ echo "=========================================="
 echo ""
 echo "The AWA Monthly Reports application is now ready to use."
 echo ""
-echo "To start the application:"
-echo "  1. Run: ./run.sh"
-echo "  2. Open your browser to: http://localhost:5000"
-echo ""
-echo "Or, you can start it now by pressing Enter..."
-read -r
 
 # Run the application
 echo ""
@@ -144,7 +128,11 @@ echo ""
 echo "The application will be available at:"
 echo "http://localhost:5000"
 echo ""
+echo "Opening browser automatically in 3 seconds..."
 echo "Press Ctrl+C to stop the application"
 echo ""
+
+# Open browser in background after a short delay
+(sleep 3 && (command -v xdg-open &> /dev/null && xdg-open http://localhost:5000 || command -v open &> /dev/null && open http://localhost:5000 || echo "Please open http://localhost:5000 in your browser manually")) &
 
 python3 main.py
