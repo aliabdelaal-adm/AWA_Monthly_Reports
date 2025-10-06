@@ -12,19 +12,83 @@ Comprehensive guide to install and setup the AWA Monthly Reports System
 
 **The easiest and fastest way - recommended for everyone!**
 
+### 📌 ما هو "المشروع"؟ / What is "the Project"?
+
+"المشروع" هو نظام **AWA Monthly Reports** - تطبيق ويب كامل موجود على GitHub. عند تحميل المشروع، ستحصل على جميع الملفات والبرامج النصية اللازمة لتشغيل النظام على جهازك.
+
+"The Project" is the **AWA Monthly Reports** system - a complete web application hosted on GitHub. When you download the project, you get all the files and scripts needed to run the system on your computer.
+
+**موقع المشروع / Project Location:**
+```
+https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
+```
+
+**ما الذي ستحصل عليه؟ / What will you get?**
+- ✅ ملفات التطبيق الكاملة / Complete application files
+- ✅ سكريبتات التثبيت الآلي / Automated installation scripts
+- ✅ جميع التبعيات والمكتبات المطلوبة / All required dependencies
+- ✅ الوثائق والشروحات / Documentation and guides
+
 ### للمستخدمين الذين لا يعرفون كيفية التثبيت / For Users Who Don't Know How to Install
 
 لا تقلق! لقد أعددنا لك سكريبتات تثبيت آلية تقوم بكل شيء نيابة عنك.
 
 Don't worry! We've prepared automated installation scripts that do everything for you.
 
+### 📝 ملاحظة مهمة حول "تحميل المشروع" / Important Note About "Downloading the Project"
+
+**عندما نقول "حمّل المشروع"، نعني:**
+
+1. اذهب إلى موقع GitHub الخاص بالمشروع
+2. حمّل جميع الملفات من هناك كملف ZIP واحد
+3. فك ضغط الملف على جهازك
+
+**When we say "download the project", we mean:**
+
+1. Go to the project's GitHub website
+2. Download all files from there as a single ZIP file
+3. Extract the ZIP file on your computer
+
+**لماذا GitHub؟** لأن جميع ملفات المشروع محفوظة هناك. GitHub هو موقع لاستضافة البرمجيات مجاناً.
+
+**Why GitHub?** Because all project files are stored there. GitHub is a free software hosting website.
+
 #### Windows (ويندوز)
 
-1. حمّل المشروع وفك ضغط الملف / Download the project and extract it
-2. افتح مجلد المشروع / Open the project folder
-3. انقر مرتين على `install.bat` / Double-click `install.bat`
-4. انتظر حتى ينتهي التثبيت / Wait for installation to complete
-5. سيفتح التطبيق تلقائياً! / Application will start automatically!
+**الخطوة 1: تحميل المشروع من GitHub / Step 1: Download Project from GitHub**
+
+1. اذهب إلى صفحة المشروع / Go to the project page:
+   ```
+   https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
+   ```
+
+2. انقر على الزر الأخضر "Code" / Click the green "Code" button
+
+3. اختر "Download ZIP" من القائمة / Select "Download ZIP" from the menu
+
+4. احفظ ملف `AWA_Monthly_Reports-main.zip` على جهازك / Save `AWA_Monthly_Reports-main.zip` to your computer
+
+**الخطوة 2: فك ضغط الملف / Step 2: Extract the ZIP file**
+
+5. اذهب إلى مجلد التحميلات / Go to your Downloads folder
+
+6. انقر بزر الماوس الأيمن على `AWA_Monthly_Reports-main.zip` / Right-click on `AWA_Monthly_Reports-main.zip`
+
+7. اختر "Extract All..." أو "فك الضغط إلى..." / Select "Extract All..." or "فك الضغط إلى..."
+
+8. سيتم إنشاء مجلد باسم `AWA_Monthly_Reports-main` / A folder named `AWA_Monthly_Reports-main` will be created
+
+**الخطوة 3: تشغيل التثبيت الآلي / Step 3: Run Automated Installation**
+
+9. افتح مجلد `AWA_Monthly_Reports-main` / Open the `AWA_Monthly_Reports-main` folder
+
+10. ابحث عن ملف `install.bat` / Find the file `install.bat`
+
+11. انقر مرتين على `install.bat` / Double-click `install.bat`
+
+12. انتظر حتى ينتهي التثبيت (قد يستغرق عدة دقائق) / Wait for installation to complete (may take several minutes)
+
+13. سيفتح التطبيق تلقائياً في المتصفح! / Application will start automatically in your browser!
 
 أو عبر سطر الأوامر / Or via Command Line:
 ```bash
@@ -33,14 +97,53 @@ install.bat
 
 #### macOS/Linux (ماك/لينكس)
 
-1. حمّل المشروع وفك ضغط الملف / Download the project and extract it
-2. افتح Terminal في مجلد المشروع / Open Terminal in the project folder
-3. نفّذ الأمر / Run the command:
-```bash
-./install.sh
-```
-4. انتظر حتى ينتهي التثبيت / Wait for installation to complete
-5. سيفتح التطبيق تلقائياً! / Application will start automatically!
+**الخطوة 1: تحميل المشروع من GitHub / Step 1: Download Project from GitHub**
+
+1. اذهب إلى صفحة المشروع / Go to the project page:
+   ```
+   https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
+   ```
+
+2. انقر على الزر الأخضر "Code" / Click the green "Code" button
+
+3. اختر "Download ZIP" من القائمة / Select "Download ZIP" from the menu
+
+4. احفظ ملف `AWA_Monthly_Reports-main.zip` على جهازك / Save `AWA_Monthly_Reports-main.zip` to your computer
+
+**الخطوة 2: فك ضغط الملف / Step 2: Extract the ZIP file**
+
+5. افتح Terminal / Open Terminal
+
+6. اذهب إلى مجلد التحميلات / Navigate to Downloads folder:
+   ```bash
+   cd ~/Downloads
+   ```
+
+7. فك ضغط الملف / Extract the file:
+   ```bash
+   unzip AWA_Monthly_Reports-main.zip
+   ```
+
+8. ادخل إلى مجلد المشروع / Enter the project folder:
+   ```bash
+   cd AWA_Monthly_Reports-main
+   ```
+
+**الخطوة 3: تشغيل التثبيت الآلي / Step 3: Run Automated Installation**
+
+9. امنح صلاحيات التنفيذ / Give execution permissions:
+   ```bash
+   chmod +x install.sh
+   ```
+
+10. نفّذ سكريبت التثبيت / Run installation script:
+    ```bash
+    ./install.sh
+    ```
+
+11. انتظر حتى ينتهي التثبيت (قد يستغرق عدة دقائق) / Wait for installation to complete (may take several minutes)
+
+12. سيفتح التطبيق تلقائياً في المتصفح! / Application will start automatically in your browser!
 
 ### ماذا تفعل السكريبتات الآلية؟ / What Do the Automated Scripts Do?
 
@@ -108,10 +211,43 @@ cd AWA_Monthly_Reports
 
 #### 1. تحميل المشروع / Download the Project
 
-- اذهب إلى / Go to: https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
-- انقر على "Code" ثم "Download ZIP"
-- فك ضغط الملف / Extract the ZIP file
-- افتح مجلد المشروع / Open the project folder
+هذه الطريقة مناسبة للمستخدمين الذين لا يستخدمون Git / This method is suitable for users who don't use Git
+
+**خطوات التحميل / Download Steps:**
+
+1. اذهب إلى صفحة المشروع على GitHub / Go to the project page on GitHub:
+   ```
+   https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
+   ```
+
+2. ابحث عن الزر الأخضر "Code" في أعلى الصفحة / Look for the green "Code" button at the top of the page
+
+3. انقر على "Code" / Click "Code"
+
+4. اختر "Download ZIP" من القائمة المنسدلة / Select "Download ZIP" from the dropdown menu
+
+5. سيتم تحميل ملف `AWA_Monthly_Reports-main.zip` (حجم حوالي 10-20 MB) / A file `AWA_Monthly_Reports-main.zip` will be downloaded (about 10-20 MB)
+
+**فك الضغط / Extract the Files:**
+
+6. اذهب إلى مجلد التحميلات على جهازك / Go to your Downloads folder
+
+7. انقر بزر الماوس الأيمن على الملف `AWA_Monthly_Reports-main.zip` / Right-click on `AWA_Monthly_Reports-main.zip`
+
+8. اختر "Extract All..." (Windows) أو "فك الضغط" (Windows باللغة العربية) أو استخدم برنامج فك الضغط المفضل لديك / Select "Extract All..." (Windows) or use your preferred extraction software
+
+9. اختر المكان الذي تريد فك الضغط إليه (مثل: سطح المكتب أو مجلد المستندات) / Choose where to extract (e.g., Desktop or Documents folder)
+
+10. سيتم إنشاء مجلد جديد باسم `AWA_Monthly_Reports-main` يحتوي على جميع ملفات المشروع / A new folder `AWA_Monthly_Reports-main` will be created containing all project files
+
+11. افتح مجلد `AWA_Monthly_Reports-main` / Open the `AWA_Monthly_Reports-main` folder
+
+12. تأكد من وجود الملفات التالية / Verify that you see these files:
+    - `install.bat` (لنظام Windows)
+    - `install.sh` (لنظام macOS/Linux)
+    - `requirements.txt`
+    - مجلد `app/`
+    - وملفات أخرى
 
 ## الإعداد / Setup
 
