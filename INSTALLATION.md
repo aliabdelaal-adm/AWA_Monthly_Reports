@@ -440,6 +440,43 @@ unzip AWA_Monthly_Reports-main.zip
 cd AWA_Monthly_Reports-main
 ```
 
+---
+
+#### ⭐ التثبيت التلقائي السريع / Quick Automated Installation (موصى به / Recommended)
+
+**الطريقة الأسهل: استخدام السكريبت التلقائي / Easiest Method: Using Automated Script**
+
+بعد تحميل المشروع (خطوة 4 أعلاه)، يمكنك استخدام السكريبت التلقائي الذي يقوم بكل شيء بأمر واحد!
+
+After downloading the project (step 4 above), you can use the automated script that does everything with one command!
+
+```bash
+# امنح صلاحيات التنفيذ / Grant execution permissions
+chmod +x start-android.sh
+
+# قم بالتشغيل! / Run it!
+./start-android.sh
+```
+
+⏳ السكريبت سيقوم تلقائياً بـ / The script will automatically:
+- ✅ إنشاء البيئة الافتراضية / Create virtual environment
+- ✅ تثبيت جميع المتطلبات / Install all requirements
+- ✅ إعداد المجلدات / Set up directories
+- ✅ تشغيل التطبيق / Start the application
+
+🎉 انتهى! افتح المتصفح على `http://localhost:5000`
+
+🎉 Done! Open browser to `http://localhost:5000`
+
+> 💡 **للتشغيل مرة أخرى**: فقط شغّل `./start-android.sh` مرة أخرى!  
+> 💡 **To run again**: Just run `./start-android.sh` again!
+
+---
+
+#### 📖 التثبيت اليدوي التفصيلي / Detailed Manual Installation
+
+إذا كنت تفضل التثبيت اليدوي خطوة بخطوة / If you prefer manual step-by-step installation:
+
 #### 5. إنشاء البيئة الافتراضية / Create Virtual Environment
 
 ```bash

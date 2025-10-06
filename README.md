@@ -117,17 +117,17 @@ termux-setup-storage
 cd ~
 git clone https://github.com/aliabdelaal-adm/AWA_Monthly_Reports.git
 cd AWA_Monthly_Reports
-python -m venv venv
-source venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
 
-# 4. Run:
-python main.py
+# 4. Run automated installation script:
+chmod +x start-android.sh
+./start-android.sh
 
 # 5. Open browser to: http://localhost:5000
 ```
 
+> 📖 **دليل أندرويد المبسط (بالعربي) / Simplified Android Guide (in Arabic):**  
+> 🇸🇦 [ANDROID_QUICKSTART_AR.md](ANDROID_QUICKSTART_AR.md) - دليل مبسط خطوة بخطوة بالعربي
+>
 > 📖 **للتعليمات التفصيلية / For detailed instructions:**  
 > راجع قسم Android في / See Android section in [INSTALLATION.md](INSTALLATION.md)
 
