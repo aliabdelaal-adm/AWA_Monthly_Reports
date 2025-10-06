@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% block title %}عن البرنامج - About{% endblock %}
+
+{% block extra_css %}
+<style>
+    .about-section {
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        color: #1e3c72;
+        font-size: 2em;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #667eea;
+    }
+    
+    .content-box {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+    
+    .content-box h3 {
+        color: #1e3c72;
+        margin-bottom: 15px;
+    }
+    
+    .content-box p {
+        color: #666;
+        margin-bottom: 10px;
+    }
+    
+    .features-list {
+        display: grid;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+        background: white;
+        border-radius: 10px;
+        border-right: 4px solid #667eea;
+    }
+    
+    .feature-icon {
+        font-size: 2em;
+        flex-shrink: 0;
+    }
+    
+    .contact-info {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h1>عن نظام التقارير الشهرية</h1>
+        <h2>About Monthly Reports System</h2>
+    </div>
+    
+    <div class="about-section">
+        <h2 class="section-title">نظرة عامة / Overview</h2>
+        <div class="content-box">
+            <h3>عن النظام / About the System</h3>
+            <p>
+                نظام التقارير الشهرية الذكي هو حل متطور تم تصميمه خصيصاً لإدارة الرفق بالحيوان 
+                في بلدية مدينة أبوظبي. يقوم النظام بمعالجة المستندات والبيانات تلقائياً لإنشاء 
+                تقارير شهرية شاملة واحترافية.
+            </p>
+            <p>
+                The Intelligent Monthly Reports System is an advanced solution specifically designed 
+                for the Animal Welfare Administration at Abu Dhabi Municipality. The system automatically 
+                processes documents and data to create comprehensive and professional monthly reports.
+            </p>
+        </div>
+    </div>
+    
+    <div class="about-section">
+        <h2 class="section-title">المميزات الرئيسية / Key Features</h2>
+        <div class="features-list">
+            <div class="feature-item">
+                <div class="feature-icon">🤖</div>
+                <div>
+                    <h4>معالجة ذكية تلقائية / Intelligent Automation</h4>
+                    <p>
+                        استخراج تلقائي للبيانات من مستندات Word وPowerPoint والصور باستخدام تقنيات 
+                        الذكاء الاصطناعي ومعالجة اللغة الطبيعية.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <div>
+                    <h4>تحليل متقدم للبيانات / Advanced Data Analysis</h4>
+                    <p>
+                        تحليل شامل للبيانات مع توليد رؤى تلقائية ومؤشرات أداء رئيسية لدعم اتخاذ القرارات.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <div>
+                    <h4>تصميم احترافي وجذاب / Professional Design</h4>
+                    <p>
+                        تقارير ذات تصميم عصري واحترافي جاهزة للعرض على الإدارة العليا والمسؤولين.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🌐</div>
+                <div>
+                    <h4>دعم كامل للغة العربية / Full Arabic Support</h4>
+                    <p>
+                        واجهة ثنائية اللغة (عربي/إنجليزي) مع دعم الكتابة من اليمين لليسار (RTL).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">📈</div>
+                <div>
+                    <h4>رسوم بيانية تفاعلية / Interactive Visualizations</h4>
+                    <p>
+                        عرض البيانات بطريقة مرئية واضحة مع رسوم بيانية ومخططات احترافية.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">💾</div>
+                <div>
+                    <h4>تصدير متعدد الصيغ / Multiple Export Formats</h4>
+                    <p>
+                        إمكانية حفظ وطباعة التقارير بصيغ HTML و PDF للمشاركة والتوزيع.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about-section">
+        <h2 class="section-title">كيفية الاستخدام / How to Use</h2>
+        <div class="content-box">
+            <h3>خطوات بسيطة لإنشاء التقرير / Simple Steps to Create a Report</h3>
+            <ol style="padding-right: 20px; color: #666;">
+                <li style="margin-bottom: 15px;">
+                    <strong>اختر الشهر والسنة:</strong> حدد الفترة الزمنية للتقرير
+                    <br>
+                    <em>Select Month and Year: Choose the report period</em>
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong>ارفع الملفات:</strong> قم برفع مستندات Word وPowerPoint والصور المتعلقة بالأنشطة
+                    <br>
+                    <em>Upload Files: Upload Word documents, PowerPoint presentations, and images</em>
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong>إنشاء التقرير:</strong> انقر على زر "إنشاء التقرير" وانتظر المعالجة
+                    <br>
+                    <em>Generate Report: Click "Generate Report" and wait for processing</em>
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong>مراجعة وتصدير:</strong> راجع التقرير واطبعه أو احفظه بصيغة PDF
+                    <br>
+                    <em>Review and Export: Review the report and print or save as PDF</em>
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="about-section">
+        <h2 class="section-title">التقنيات المستخدمة / Technologies Used</h2>
+        <div class="content-box">
+            <ul style="padding-right: 20px; color: #666;">
+                <li>Python Flask - إطار عمل تطبيقات الويب / Web Application Framework</li>
+                <li>python-docx - معالجة مستندات Word / Word Document Processing</li>
+                <li>python-pptx - معالجة عروض PowerPoint / PowerPoint Processing</li>
+                <li>PIL/Pillow - معالجة الصور / Image Processing</li>
+                <li>Pandas - تحليل البيانات / Data Analysis</li>
+                <li>Matplotlib & Plotly - الرسوم البيانية / Data Visualization</li>
+                <li>ReportLab - إنشاء ملفات PDF / PDF Generation</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="about-section">
+        <div class="contact-info">
+            <h2>إدارة الرفق بالحيوان</h2>
+            <h3>Animal Welfare Administration</h3>
+            <p style="margin-top: 20px;">بلدية مدينة أبوظبي - الإمارات العربية المتحدة</p>
+            <p>Abu Dhabi Municipality - United Arab Emirates</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                © 2024 جميع الحقوق محفوظة / All Rights Reserved
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
