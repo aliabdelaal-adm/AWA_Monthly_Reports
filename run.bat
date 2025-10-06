@@ -2,6 +2,9 @@
 REM AWA Monthly Reports - Run Script for Windows
 REM This script sets up and runs the AWA Monthly Reports application
 
+REM Change to the script's directory
+cd /d "%~dp0"
+
 echo ==========================================
 echo AWA Monthly Reports System
 echo Animal Welfare Administration
