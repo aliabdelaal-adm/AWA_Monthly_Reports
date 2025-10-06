@@ -4,6 +4,74 @@
 
 Comprehensive guide to install and setup the AWA Monthly Reports System
 
+---
+
+## 🎯 التثبيت السريع والآلي / Quick Automated Installation
+
+**الطريقة الأسهل والأسرع - موصى بها للجميع!**
+
+**The easiest and fastest way - recommended for everyone!**
+
+### للمستخدمين الذين لا يعرفون كيفية التثبيت / For Users Who Don't Know How to Install
+
+لا تقلق! لقد أعددنا لك سكريبتات تثبيت آلية تقوم بكل شيء نيابة عنك.
+
+Don't worry! We've prepared automated installation scripts that do everything for you.
+
+#### Windows (ويندوز)
+
+1. حمّل المشروع وفك ضغط الملف / Download the project and extract it
+2. افتح مجلد المشروع / Open the project folder
+3. انقر مرتين على `install.bat` / Double-click `install.bat`
+4. انتظر حتى ينتهي التثبيت / Wait for installation to complete
+5. سيفتح التطبيق تلقائياً! / Application will start automatically!
+
+أو عبر سطر الأوامر / Or via Command Line:
+```bash
+install.bat
+```
+
+#### macOS/Linux (ماك/لينكس)
+
+1. حمّل المشروع وفك ضغط الملف / Download the project and extract it
+2. افتح Terminal في مجلد المشروع / Open Terminal in the project folder
+3. نفّذ الأمر / Run the command:
+```bash
+./install.sh
+```
+4. انتظر حتى ينتهي التثبيت / Wait for installation to complete
+5. سيفتح التطبيق تلقائياً! / Application will start automatically!
+
+### ماذا تفعل السكريبتات الآلية؟ / What Do the Automated Scripts Do?
+
+السكريبتات تقوم تلقائياً بـ:
+- ✅ التحقق من تثبيت Python وإصداره
+- ✅ التحقق من تثبيت pip
+- ✅ إنشاء بيئة افتراضية (Virtual Environment)
+- ✅ تفعيل البيئة الافتراضية
+- ✅ تحديث pip لآخر إصدار
+- ✅ تثبيت جميع المكتبات المطلوبة من requirements.txt
+- ✅ إنشاء المجلدات المطلوبة للتطبيق
+- ✅ تشغيل التطبيق
+
+The scripts automatically:
+- ✅ Check Python installation and version
+- ✅ Check pip installation
+- ✅ Create virtual environment
+- ✅ Activate virtual environment
+- ✅ Update pip to latest version
+- ✅ Install all required packages from requirements.txt
+- ✅ Create necessary application directories
+- ✅ Start the application
+
+### بعد اكتمال التثبيت / After Installation Completes
+
+1. افتح المتصفح / Open your browser
+2. انتقل إلى / Navigate to: **http://localhost:5000**
+3. ابدأ استخدام التطبيق! / Start using the application!
+
+---
+
 ## المتطلبات / Requirements
 
 ### متطلبات النظام / System Requirements
