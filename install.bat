@@ -3,6 +3,9 @@ REM AWA Monthly Reports - Automated Installation Script for Windows
 REM This script automatically installs and sets up the AWA Monthly Reports application
 REM No manual steps required - just run this script!
 
+REM Change to the script's directory
+cd /d "%~dp0"
+
 echo ==========================================
 echo AWA Monthly Reports System
 echo Automated Installation Script
@@ -92,6 +95,12 @@ if exist "requirements.txt" (
     echo √ All dependencies installed successfully
 ) else (
     echo X Error: requirements.txt not found
+    echo.
+    echo Current directory: %CD%
+    echo.
+    echo Please ensure you are running this script from the project root directory.
+    echo The directory should contain: requirements.txt, main.py, and app/ folder
+    echo.
     pause
     exit /b 1
 )

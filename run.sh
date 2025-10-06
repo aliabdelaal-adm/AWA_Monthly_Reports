@@ -3,6 +3,9 @@
 # AWA Monthly Reports - Run Script
 # This script sets up and runs the AWA Monthly Reports application
 
+# Change to the script's directory
+cd "$(dirname "$0")"
+
 echo "=========================================="
 echo "AWA Monthly Reports System"
 echo "Animal Welfare Administration"

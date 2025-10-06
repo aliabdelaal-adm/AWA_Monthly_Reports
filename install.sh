@@ -6,6 +6,9 @@
 
 set -e  # Exit on any error
 
+# Change to the script's directory
+cd "$(dirname "$0")"
+
 echo "=========================================="
 echo "AWA Monthly Reports System"
 echo "Automated Installation Script"
@@ -100,6 +103,12 @@ if [ -f "requirements.txt" ]; then
     echo "✓ All dependencies installed successfully"
 else
     echo "❌ Error: requirements.txt not found"
+    echo ""
+    echo "Current directory: $(pwd)"
+    echo ""
+    echo "Please ensure you are running this script from the project root directory."
+    echo "The directory should contain: requirements.txt, main.py, and app/ folder"
+    echo ""
     exit 1
 fi
 echo ""
