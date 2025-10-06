@@ -111,9 +111,9 @@ Press Ctrl+C to stop the application
  * Running on http://127.0.0.1:5000
 ```
 
-افتح المتصفح وانتقل إلى: **http://localhost:5000**
+المتصفح سيفتح تلقائياً على: **http://localhost:5000**
 
-Open your browser and go to: **http://localhost:5000**
+The browser will open automatically at: **http://localhost:5000**
 
 ---
 

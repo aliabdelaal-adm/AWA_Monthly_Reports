@@ -170,7 +170,7 @@ chmod +x start-android.sh
 ./start-android.sh
 ```
 
-ثم افتح المتصفح على: **http://localhost:5000**
+المتصفح سيفتح تلقائياً على: **http://localhost:5000**
 
 ---
 
