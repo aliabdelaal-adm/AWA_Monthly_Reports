@@ -57,7 +57,11 @@ echo ""
 echo "The application will be available at:"
 echo "http://localhost:5000"
 echo ""
+echo "Opening browser automatically in 3 seconds..."
 echo "Press Ctrl+C to stop the application"
 echo ""
+
+# Open browser in background after a short delay
+(sleep 3 && (command -v xdg-open &> /dev/null && xdg-open http://localhost:5000 || command -v open &> /dev/null && open http://localhost:5000 || echo "Please open http://localhost:5000 in your browser manually")) &
 
 python3 main.py

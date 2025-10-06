@@ -60,17 +60,7 @@ echo.
 REM Create virtual environment
 echo [3/6] Creating virtual environment...
 if exist "venv\" (
-    echo Virtual environment already exists.
-    echo Do you want to recreate it? (Y/N^)
-    set /p response=
-    if /i "%response%"=="Y" (
-        echo Removing existing virtual environment...
-        rmdir /s /q venv
-        python -m venv venv
-        echo √ Virtual environment recreated
-    ) else (
-        echo √ Using existing virtual environment
-    )
+    echo √ Using existing virtual environment
 ) else (
     python -m venv venv
     echo √ Virtual environment created
@@ -121,12 +111,6 @@ echo ==========================================
 echo.
 echo The AWA Monthly Reports application is now ready to use.
 echo.
-echo To start the application:
-echo   1. Run: run.bat
-echo   2. Open your browser to: http://localhost:5000
-echo.
-echo Or, you can start it now by pressing any key...
-pause
 
 REM Run the application
 echo.
@@ -137,7 +121,11 @@ echo.
 echo The application will be available at:
 echo http://localhost:5000
 echo.
+echo Opening browser automatically in 3 seconds...
 echo Press Ctrl+C to stop the application
 echo.
+
+REM Open browser in background after a short delay
+start /b cmd /c "timeout /t 3 /nobreak >nul && start http://localhost:5000"
 
 python main.py

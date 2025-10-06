@@ -86,8 +86,8 @@ echo "التطبيق يعمل الآن على:"
 echo ""
 echo "    👉 http://localhost:5000"
 echo ""
-echo "Open your web browser and navigate to the URL above."
-echo "افتح متصفح الويب وانتقل إلى الرابط أعلاه."
+echo "Opening browser automatically in 3 seconds..."
+echo "فتح المتصفح تلقائياً خلال 3 ثوان..."
 echo ""
 echo "📱 Android Tips / نصائح أندرويد:"
 echo "  • To stop: Volume Down + C"
@@ -95,5 +95,8 @@ echo "  • للإيقاف: Volume Down + C"
 echo "  • Keep screen on for best performance"
 echo "  • أبق الشاشة مضاءة للأداء الأفضل"
 echo ""
+
+# Try to open browser automatically on Android/Termux
+(sleep 3 && (command -v termux-open-url &> /dev/null && termux-open-url http://localhost:5000 || command -v xdg-open &> /dev/null && xdg-open http://localhost:5000 || echo "Please open http://localhost:5000 in your browser manually / الرجاء فتح http://localhost:5000 في المتصفح يدوياً")) &
 
 python main.py
