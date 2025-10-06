@@ -84,7 +84,7 @@ pip install -r requirements.txt
 run.bat
 
 # أو / or
-python app.py
+python main.py
 ```
 
 ### macOS/Linux

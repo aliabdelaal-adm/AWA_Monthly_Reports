@@ -17,7 +17,10 @@ class ReportGenerator:
     def generate_html_report(self, data):
         """Generate HTML report"""
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        filename = f"report_{data.get('month', '')}_{data.get('year', '')}_{timestamp}.html"
+        # Clean filename to avoid special characters
+        month = str(data.get('month', 'month')).replace('/', '_').replace(' ', '_')
+        year = str(data.get('year', 'year'))
+        filename = f"report_{month}_{year}_{timestamp}.html"
         filepath = os.path.join(self.reports_folder, filename)
         
         html_content = self._build_html_report(data)
@@ -32,7 +35,10 @@ class ReportGenerator:
         # This would use reportlab or similar library
         # For now, returning a placeholder
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        filename = f"report_{data.get('month', '')}_{data.get('year', '')}_{timestamp}.pdf"
+        # Clean filename to avoid special characters
+        month = str(data.get('month', 'month')).replace('/', '_').replace(' ', '_')
+        year = str(data.get('year', 'year'))
+        filename = f"report_{month}_{year}_{timestamp}.pdf"
         return filename
     
     def _build_html_report(self, data):

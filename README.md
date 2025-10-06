@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 4. **تشغيل التطبيق / Run the application**
 ```bash
-python app.py
+python main.py
 ```
 
 5. **فتح المتصفح / Open browser**
