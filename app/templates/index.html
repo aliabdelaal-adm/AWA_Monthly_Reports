@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{% block title %}الرئيسية - AWA Monthly Reports{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .hero p {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+    }
+    
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .feature-card {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .feature-icon {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+    
+    .feature-title {
+        font-size: 1.5em;
+        color: #1e3c72;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .feature-description {
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    .cta-section {
+        text-align: center;
+        margin-top: 60px;
+        padding: 40px;
+        background: #f8f9fa;
+        border-radius: 15px;
+    }
+    
+    .cta-section h2 {
+        color: #1e3c72;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="hero">
+        <h1>نظام التقارير الشهرية الذكي</h1>
+        <h2>Intelligent Monthly Reports System</h2>
+        <p>إدارة الرفق بالحيوان - بلدية مدينة أبوظبي</p>
+        <p>Animal Welfare Administration - Abu Dhabi Municipality</p>
+        <a href="/upload" class="btn">ابدأ الآن / Start Now</a>
+    </div>
+    
+    <div class="header">
+        <h1>الميزات الرئيسية</h1>
+        <p>Main Features</p>
+    </div>
+    
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">📄</div>
+            <div class="feature-title">معالجة ذكية للمستندات</div>
+            <div class="feature-title" style="font-size: 1.2em;">Intelligent Document Processing</div>
+            <div class="feature-description">
+                استخراج البيانات تلقائياً من ملفات Word وPowerPoint والصور
+                <br>
+                Automatically extract data from Word, PowerPoint, and images
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <div class="feature-title">تحليل متقدم</div>
+            <div class="feature-title" style="font-size: 1.2em;">Advanced Analytics</div>
+            <div class="feature-description">
+                تحليل شامل للبيانات مع رؤى ومؤشرات أداء رئيسية
+                <br>
+                Comprehensive data analysis with insights and KPIs
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <div class="feature-title">تصميم احترافي</div>
+            <div class="feature-title" style="font-size: 1.2em;">Professional Design</div>
+            <div class="feature-description">
+                تقارير جميلة وجاهزة للعرض على الإدارة العليا
+                <br>
+                Beautiful reports ready for senior management presentation
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <div class="feature-title">دعم اللغة العربية</div>
+            <div class="feature-title" style="font-size: 1.2em;">Arabic Language Support</div>
+            <div class="feature-description">
+                واجهة وتقارير ثنائية اللغة (عربي/إنجليزي)
+                <br>
+                Bilingual interface and reports (Arabic/English)
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <div class="feature-title">رسوم بيانية تفاعلية</div>
+            <div class="feature-title" style="font-size: 1.2em;">Interactive Charts</div>
+            <div class="feature-description">
+                تصور البيانات بطريقة واضحة وجذابة
+                <br>
+                Visualize data in a clear and attractive way
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">💾</div>
+            <div class="feature-title">تصدير متعدد</div>
+            <div class="feature-title" style="font-size: 1.2em;">Multiple Export Options</div>
+            <div class="feature-description">
+                حفظ التقارير بصيغة HTML أو PDF
+                <br>
+                Save reports as HTML or PDF
+            </div>
+        </div>
+    </div>
+    
+    <div class="cta-section">
+        <h2>جاهز لإنشاء تقريرك الشهري؟</h2>
+        <h3>Ready to create your monthly report?</h3>
+        <p style="margin: 20px 0; color: #666;">
+            ارفع ملفاتك وسيقوم النظام بإنشاء تقرير شامل تلقائياً
+            <br>
+            Upload your files and the system will automatically create a comprehensive report
+        </p>
+        <a href="/upload" class="btn">ابدأ الآن / Start Now</a>
+    </div>
+</div>
+{% endblock %}
