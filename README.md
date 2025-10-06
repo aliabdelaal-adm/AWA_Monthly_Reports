@@ -66,7 +66,46 @@ The Intelligent Monthly Reports System is a comprehensive and innovative solutio
 - Python 3.8 أو أحدث
 - pip (مدير حزم Python)
 
-### التثبيت / Installation
+### التثبيت الآلي (موصى به) / Automated Installation (Recommended)
+
+**أسهل طريقة للتثبيت - كل شيء آلي!**
+**Easiest way to install - everything is automated!**
+
+#### Windows (ويندوز)
+```bash
+# 1. Download and extract the project
+# 2. Open Command Prompt in the project folder
+# 3. Run:
+install.bat
+```
+
+#### macOS/Linux (ماك/لينكس)
+```bash
+# 1. Download and extract the project
+# 2. Open Terminal in the project folder
+# 3. Run:
+./install.sh
+```
+
+**هذا كل شيء! السكريبت سيقوم بكل شيء تلقائياً:**
+- ✅ التحقق من متطلبات النظام
+- ✅ إنشاء البيئة الافتراضية
+- ✅ تثبيت جميع المكتبات
+- ✅ إعداد المجلدات المطلوبة
+- ✅ تشغيل التطبيق
+
+**That's it! The script will automatically:**
+- ✅ Check system requirements
+- ✅ Create virtual environment
+- ✅ Install all dependencies
+- ✅ Set up required directories
+- ✅ Start the application
+
+---
+
+### التثبيت اليدوي / Manual Installation
+
+إذا كنت تفضل التثبيت يدوياً / If you prefer manual installation:
 
 1. **استنساخ المستودع / Clone the repository**
 ```bash
