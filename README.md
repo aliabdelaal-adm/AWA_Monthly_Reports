@@ -125,6 +125,9 @@ chmod +x start-android.sh
 # 5. Open browser to: http://localhost:5000
 ```
 
+> 📖 **دليل أندرويد المبسط (بالعربي) / Simplified Android Guide (in Arabic):**  
+> 🇸🇦 [ANDROID_QUICKSTART_AR.md](ANDROID_QUICKSTART_AR.md) - دليل مبسط خطوة بخطوة بالعربي
+>
 > 📖 **للتعليمات التفصيلية / For detailed instructions:**  
 > راجع قسم Android في / See Android section in [INSTALLATION.md](INSTALLATION.md)
 

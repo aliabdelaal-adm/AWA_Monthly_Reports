@@ -201,6 +201,9 @@ http://localhost:5000
 - 🔄 لإيقاف التطبيق: `Volume Down + C`
 - 📚 للمزيد: راجع [INSTALLATION.md](INSTALLATION.md) قسم Android
 
+> 🇸🇦 **دليل أندرويد المبسط بالعربي:**  
+> [ANDROID_QUICKSTART_AR.md](ANDROID_QUICKSTART_AR.md) - دليل خطوة بخطوة بالعربي للمبتدئين
+
 ---
 
 ## 🎯 ماذا سيحدث؟ / What Will Happen?
