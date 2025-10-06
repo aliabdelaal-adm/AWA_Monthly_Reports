@@ -179,7 +179,7 @@ The scripts automatically:
 
 ### متطلبات النظام / System Requirements
 
-- **نظام التشغيل / Operating System**: Windows 10/11, macOS 10.14+, Linux (Ubuntu 18.04+)
+- **نظام التشغيل / Operating System**: Windows 10/11, macOS 10.14+, Linux (Ubuntu 18.04+), Android 7.0+
 - **Python**: 3.8 أو أحدث / 3.8 or higher
 - **الذاكرة / RAM**: 4GB كحد أدنى، 8GB موصى به / 4GB minimum, 8GB recommended
 - **المساحة / Storage**: 500MB مساحة حرة / 500MB free space
@@ -326,6 +326,238 @@ pip install -r requirements.txt
 # أو / or
 python3 app.py
 ```
+
+### Android (أندرويد)
+
+#### 📱 التثبيت على نظام أندرويد / Installing on Android
+
+لتشغيل هذا التطبيق على نظام أندرويد، ستحتاج إلى استخدام **Termux** - وهو محاكي طرفية Linux لأندرويد.
+
+To run this application on Android, you'll need to use **Termux** - a Linux terminal emulator for Android.
+
+#### 1. تثبيت Termux / Install Termux
+
+**الخطوة الأولى: تحميل Termux / Step 1: Download Termux**
+
+⚠️ **مهم جداً / Very Important**: لا تستخدم Termux من Google Play Store (نسخة قديمة ومتوقفة)
+
+❌ **لا تحمل من / Don't download from**: Google Play Store  
+✅ **حمّل من / Download from**: 
+- [F-Droid](https://f-droid.org/en/packages/com.termux/) (موصى به / Recommended)
+- [GitHub Releases](https://github.com/termux/termux-app/releases)
+
+**كيفية التثبيت من F-Droid / Installing from F-Droid:**
+
+1. حمّل تطبيق F-Droid من: https://f-droid.org/
+2. افتح F-Droid وابحث عن "Termux"
+3. اضغط على "Install"
+4. انتظر حتى ينتهي التثبيت
+
+#### 2. إعداد Termux / Setup Termux
+
+**الخطوة 1: تحديث الحزم / Step 1: Update Packages**
+
+افتح Termux واكتب الأوامر التالية / Open Termux and type these commands:
+
+```bash
+# تحديث قائمة الحزم / Update package list
+pkg update -y
+
+# ترقية الحزم المثبتة / Upgrade installed packages
+pkg upgrade -y
+```
+
+**الخطوة 2: تثبيت Python و Git / Step 2: Install Python and Git**
+
+```bash
+# تثبيت Python
+pkg install python -y
+
+# تثبيت Git
+pkg install git -y
+
+# تثبيت أدوات البناء الضرورية / Install build tools
+pkg install clang -y
+pkg install libjpeg-turbo -y
+pkg install libpng -y
+pkg install freetype -y
+```
+
+**الخطوة 3: التحقق من التثبيت / Step 3: Verify Installation**
+
+```bash
+# التحقق من Python
+python --version
+
+# التحقق من pip
+pip --version
+```
+
+#### 3. منح صلاحيات التخزين / Grant Storage Permissions
+
+لتتمكن من الوصول إلى ملفات جهازك:
+
+To access your device's files:
+
+```bash
+termux-setup-storage
+```
+
+سيظهر طلب للسماح بالوصول إلى التخزين. اضغط على "Allow" / "السماح"
+
+A permission request will appear. Click "Allow" / "السماح"
+
+#### 4. تحميل المشروع / Download the Project
+
+**الطريقة 1: استخدام Git / Method 1: Using Git**
+
+```bash
+# الانتقال إلى المجلد الرئيسي / Go to home directory
+cd ~
+
+# استنساخ المستودع / Clone repository
+git clone https://github.com/aliabdelaal-adm/AWA_Monthly_Reports.git
+
+# الدخول إلى مجلد المشروع / Enter project folder
+cd AWA_Monthly_Reports
+```
+
+**الطريقة 2: تحميل ZIP يدوياً / Method 2: Manual ZIP Download**
+
+إذا كنت قد حملت المشروع كملف ZIP على جهازك:
+
+If you've downloaded the project as a ZIP file:
+
+```bash
+# الانتقال إلى مجلد التحميلات / Go to downloads
+cd ~/storage/downloads
+
+# فك الضغط (إذا لم يكن unzip مثبتاً، ثبته أولاً)
+pkg install unzip -y
+unzip AWA_Monthly_Reports-main.zip
+
+# الدخول إلى المجلد / Enter folder
+cd AWA_Monthly_Reports-main
+```
+
+#### 5. إنشاء البيئة الافتراضية / Create Virtual Environment
+
+```bash
+# إنشاء بيئة افتراضية / Create virtual environment
+python -m venv venv
+
+# تفعيل البيئة الافتراضية / Activate virtual environment
+source venv/bin/activate
+```
+
+#### 6. تثبيت المتطلبات / Install Requirements
+
+```bash
+# ترقية pip / Upgrade pip
+pip install --upgrade pip
+
+# تثبيت المتطلبات / Install requirements
+pip install -r requirements.txt
+```
+
+⏳ **ملاحظة**: قد يستغرق التثبيت 5-15 دقيقة على أندرويد حسب سرعة الاتصال وقدرة الجهاز
+
+⏳ **Note**: Installation may take 5-15 minutes on Android depending on connection speed and device capability
+
+#### 7. تشغيل التطبيق / Run the Application
+
+```bash
+# تشغيل التطبيق / Run the application
+python main.py
+```
+
+#### 8. الوصول إلى التطبيق / Access the Application
+
+بعد تشغيل التطبيق، افتح متصفح الويب على هاتفك وانتقل إلى:
+
+After starting the application, open a web browser on your phone and navigate to:
+
+```
+http://localhost:5000
+```
+
+أو / or:
+
+```
+http://127.0.0.1:5000
+```
+
+#### 💡 نصائح مهمة لأندرويد / Important Android Tips
+
+1. **البطارية / Battery**: 
+   - التطبيق يستهلك البطارية. تأكد من شحن جهازك
+   - The app consumes battery. Make sure your device is charged
+
+2. **الأداء / Performance**:
+   - يُنصح باستخدام جهاز بذاكرة RAM 4GB أو أكثر
+   - Recommended to use device with 4GB+ RAM
+   - أغلق التطبيقات الأخرى للحصول على أفضل أداء
+   - Close other apps for best performance
+
+3. **الاتصال / Connection**:
+   - استخدم WiFi للتحميل والتثبيت (لتجنب استهلاك البيانات)
+   - Use WiFi for download and installation (to avoid data usage)
+
+4. **التخزين / Storage**:
+   - تأكد من وجود 1GB مساحة حرة على الأقل
+   - Ensure at least 1GB of free storage
+
+5. **إيقاف التطبيق / Stopping the App**:
+   - للإيقاف: اضغط `Ctrl` + `C` في Termux (أو استخدم Volume Down + C)
+   - To stop: Press `Ctrl` + `C` in Termux (or use Volume Down + C)
+
+6. **تشغيل التطبيق مرة أخرى / Running Again**:
+   ```bash
+   cd ~/AWA_Monthly_Reports  # أو المسار الصحيح
+   source venv/bin/activate
+   python main.py
+   ```
+
+#### ⚠️ القيود على أندرويد / Android Limitations
+
+- بعض الميزات قد تكون أبطأ من الكمبيوتر / Some features may be slower than on PC
+- معالجة الملفات الكبيرة قد تستغرق وقتاً أطول / Large file processing may take longer
+- يُنصح باستخدام التطبيق على الكمبيوتر للأداء الأفضل / Recommended to use on PC for best performance
+
+#### 🔧 حل مشاكل أندرويد الشائعة / Android Troubleshooting
+
+**المشكلة: فشل تثبيت بعض المكتبات / Some packages fail to install**
+
+```bash
+# تثبيت المكتبات الأساسية أولاً
+pkg install build-essential -y
+pkg install python-dev -y
+
+# ثم حاول مرة أخرى
+pip install -r requirements.txt
+```
+
+**المشكلة: خطأ "Permission denied" / Permission denied error**
+
+```bash
+# تأكد من صلاحيات التخزين
+termux-setup-storage
+
+# امنح صلاحيات للملفات
+chmod +x run.sh
+```
+
+**المشكلة: Termux يتوقف عند قفل الشاشة / Termux stops when screen locks**
+
+- افتح إعدادات أندرويد / Open Android Settings
+- اذهب إلى Battery / Battery Optimization
+- ابحث عن Termux وأوقف تحسين البطارية له / Find Termux and disable battery optimization
+
+**المشكلة: لا يمكن الوصول إلى localhost**
+
+جرب استخدام:
+- `http://127.0.0.1:5000`
+- أو تحقق من عنوان IP المحلي وجرب: `http://192.168.x.x:5000`
 
 ## التحقق من التثبيت / Verify Installation
 

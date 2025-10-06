@@ -98,6 +98,39 @@ chmod +x start.sh
 ./start.sh
 ```
 
+#### 📱 Android (أندرويد)
+
+للتثبيت على أجهزة أندرويد، يجب استخدام Termux:
+
+For Android installation, you need to use Termux:
+
+```bash
+# 1. Install Termux from F-Droid (NOT Google Play Store):
+#    https://f-droid.org/en/packages/com.termux/
+# 
+# 2. Open Termux and run:
+pkg update -y && pkg upgrade -y
+pkg install python git clang libjpeg-turbo libpng freetype -y
+termux-setup-storage
+
+# 3. Clone and setup:
+cd ~
+git clone https://github.com/aliabdelaal-adm/AWA_Monthly_Reports.git
+cd AWA_Monthly_Reports
+python -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# 4. Run:
+python main.py
+
+# 5. Open browser to: http://localhost:5000
+```
+
+> 📖 **للتعليمات التفصيلية / For detailed instructions:**  
+> راجع قسم Android في / See Android section in [INSTALLATION.md](INSTALLATION.md)
+
 **هذا كل شيء! السكريبت سيقوم بكل شيء تلقائياً:**
 - ✅ التحقق من متطلبات النظام
 - ✅ إنشاء البيئة الافتراضية
