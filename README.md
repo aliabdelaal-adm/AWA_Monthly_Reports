@@ -66,23 +66,27 @@ The Intelligent Monthly Reports System is a comprehensive and innovative solutio
 - Python 3.8 أو أحدث
 - pip (مدير حزم Python)
 
-### التثبيت الآلي (موصى به) / Automated Installation (Recommended)
+### 🎯 التثبيت السريع (موصى به) / Quick Start (Recommended)
 
-**أسهل طريقة للتثبيت - كل شيء آلي!**
-**Easiest way to install - everything is automated!**
+**أسهل طريقة للتثبيت والتشغيل!**
+**Easiest way to install and run!**
 
-#### Windows (ويندوز)
+#### 🪟 Windows (ويندوز)
 ```bash
 # 1. Download the project from GitHub:
 #    Go to: https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
 #    Click green "Code" button → "Download ZIP"
 #    Extract AWA_Monthly_Reports-main.zip
 # 2. Open the extracted AWA_Monthly_Reports-main folder
-# 3. Double-click install.bat (or run in Command Prompt):
-install.bat
+# 3. Double-click start.bat
 ```
 
-#### macOS/Linux (ماك/لينكس)
+أو استخدم / Or use:
+```cmd
+start.bat
+```
+
+#### 🍎 macOS/Linux (ماك/لينكس)
 ```bash
 # 1. Download the project from GitHub:
 #    Go to: https://github.com/aliabdelaal-adm/AWA_Monthly_Reports
@@ -90,8 +94,8 @@ install.bat
 #    Extract AWA_Monthly_Reports-main.zip
 # 2. Open Terminal in the extracted AWA_Monthly_Reports-main folder
 # 3. Run:
-chmod +x install.sh
-./install.sh
+chmod +x start.sh
+./start.sh
 ```
 
 **هذا كل شيء! السكريبت سيقوم بكل شيء تلقائياً:**
@@ -107,6 +111,9 @@ chmod +x install.sh
 - ✅ Install all dependencies
 - ✅ Set up required directories
 - ✅ Start the application
+
+> 🚨 **واجهت مشاكل في التثبيت؟ / Having installation issues?**  
+> راجع دليل حل المشاكل / Check the troubleshooting guide: [TROUBLESHOOTING_AR.md](TROUBLESHOOTING_AR.md)
 
 ---
 
