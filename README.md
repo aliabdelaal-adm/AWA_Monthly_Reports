@@ -100,6 +100,9 @@ chmod +x start.sh
 
 #### 📱 Android (أندرويد)
 
+> 🎯 **مستخدم جديد؟ ابدأ هنا! / New to Android? Start here!**  
+> 👉 [START_HERE_ANDROID.md](START_HERE_ANDROID.md) - **3 خطوات بسيطة فقط!**
+
 للتثبيت على أجهزة أندرويد، يجب استخدام Termux:
 
 For Android installation, you need to use Termux:
