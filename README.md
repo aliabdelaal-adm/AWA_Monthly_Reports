@@ -100,6 +100,9 @@ chmod +x start.sh
 
 #### 📱 Android (أندرويد)
 
+> 🎯 **مستخدم جديد؟ ابدأ هنا! / New to Android? Start here!**  
+> 👉 [START_HERE_ANDROID.md](START_HERE_ANDROID.md) - **3 خطوات بسيطة فقط!**
+
 للتثبيت على أجهزة أندرويد، يجب استخدام Termux:
 
 For Android installation, you need to use Termux:
@@ -118,13 +121,25 @@ cd ~
 git clone https://github.com/aliabdelaal-adm/AWA_Monthly_Reports.git
 cd AWA_Monthly_Reports
 
-# 4. Run automated installation script:
-chmod +x start-android.sh
-./start-android.sh
+# 4. Run the NEW IMPROVED installation script:
+chmod +x android-setup.sh
+./android-setup.sh
 
 # 5. Browser will open automatically to: http://localhost:5000
 ```
 
+> 📱 **دليل أندرويد الشامل / Complete Android Guide:**  
+> 🇸🇦 [ANDROID_README.md](ANDROID_README.md) - **كل ما تحتاجه في مكان واحد!**
+>
+> 🆘 **واجهت مشاكل؟ جرب أداة التشخيص! / Having issues? Try the diagnostic tool!**  
+> ```bash
+> cd ~/AWA_Monthly_Reports
+> ./android-doctor.sh
+> ```
+> 
+> 🆘 **لا يعمل معك؟ / Not working?**  
+> 🇸🇦 [ANDROID_HELP_AR.md](ANDROID_HELP_AR.md) - دليل المساعدة السريعة بالعربي
+>
 > 📖 **دليل أندرويد المبسط (بالعربي) / Simplified Android Guide (in Arabic):**  
 > 🇸🇦 [ANDROID_QUICKSTART_AR.md](ANDROID_QUICKSTART_AR.md) - دليل مبسط خطوة بخطوة بالعربي
 >
