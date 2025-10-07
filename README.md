@@ -125,6 +125,9 @@ chmod +x android-setup.sh
 # 5. Browser will open automatically to: http://localhost:5000
 ```
 
+> 📱 **دليل أندرويد الشامل / Complete Android Guide:**  
+> 🇸🇦 [ANDROID_README.md](ANDROID_README.md) - **كل ما تحتاجه في مكان واحد!**
+>
 > 🆘 **واجهت مشاكل؟ جرب أداة التشخيص! / Having issues? Try the diagnostic tool!**  
 > ```bash
 > cd ~/AWA_Monthly_Reports

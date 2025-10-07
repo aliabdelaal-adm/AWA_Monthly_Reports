@@ -304,6 +304,7 @@ cat diagnostic.txt
 
 ## 📚 مراجع إضافية
 
+- 📱 **الدليل الشامل:** [ANDROID_README.md](ANDROID_README.md) - كل شيء في مكان واحد!
 - 📖 **الدليل الكامل:** [INSTALLATION.md](INSTALLATION.md)
 - 🔧 **حل المشاكل:** [TROUBLESHOOTING_AR.md](TROUBLESHOOTING_AR.md)
 - 🚀 **البداية السريعة:** [ANDROID_QUICKSTART_AR.md](ANDROID_QUICKSTART_AR.md)
